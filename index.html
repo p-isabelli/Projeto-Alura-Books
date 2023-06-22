@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Alura Books</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+           <!--<span class=”cabecalho_menu_hamburguer”></span>-->
+           <input type="checkbox" id="menu" class="container_botao">
+           <label for="menu">
+                <img src="img/Menu.svg" alt="menu" class="cabecalho_menu_hamburguer container_imagem" >
+            </label>
+
+            <ul class="lista_menu">
+                <li class="lista_menu_titulo">Categorias</li>
+                <li class="lista_menu_item"><a href="#" class="lista_menu_link">Programação</a></li>
+                <li class="lista_menu_item"><a href="#" class="lista_menu_link">Front-end</a></li>
+                <li class="lista_menu_item"><a href="#" class="lista_menu_link">Infraestrutura</a></li>
+                <li class="lista_menu_item"><a href="#" class="lista_menu_link">Business</a></li>
+                <li class="lista_menu_item"><a href="#" class="lista_menu_link">Design & UX</a></li>
+            </ul>
+            
+            <img src="img/Logo.svg" alt="logo alura" class="logo Alura Books">
+        </div>
+        <div class="container">
+                <a href="#"><img src="img/Favoritos.svg" alt="meus favoritos" class="container_imagem"></a>
+                <a href="#"><img src="img/Compras.svg" alt="minha sacola" class="container_imagem"></a>
+                <a href="#"><img src="img/Usuário.svg" alt="perfil" class="container_imagem"></a>
+        </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner_titulo">Já sabe por onde começar?</h2>
+        <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" placeholder="Qual será sua próxima leitura?" class="banner_pesquisa">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Últimos Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro Guia Front End"></div>
+                <div class="swiper-slide"><img src="img/Liderança.png" alt="Livro Liderança"></div>
+                <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro Gestão de Produtos"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="Livro Métricas Ágeis"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro Javascript Assertivo"></div>
+            </div>
+          
+            <!-- If we need navigation buttons
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+        </div>
+
+    </section>
+
+    <section class="card">
+        <div class="card_informacoes">
+            <h3 class="card_texto">Talvez você também se interesse por...</h3>
+            <h2 class="card_titulo">Angular 11 e Firebase</h2>
+            <p class="card_descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="card_imagens">
+                <img src="img/Favoritos.svg" alt="Favoritos" width="25px">
+                <img src="img/Compras.svg" alt="Sacola" width="35px">
+            </div>
+        </div>
+        <div class="card_botoes">
+            <img src="img/angular.svg" alt="Angular" class="imagem-card_angular">
+            <button class="card_botao_saiba_mais">Saiba mais</button>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro Guia Front End"></div>
+                <div class="swiper-slide"><img src="img/Liderança.png" alt="Livro Liderança"></div>
+                <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livro Gestão de Produtos"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="Livro Métricas Ágeis"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro Javascript Assertivo"></div>
+            </div>
+          
+            <!-- If we need navigation buttons
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+        </div>
+
+    </section>
+
+    <section class="card">
+        <div class="card_informacoes">
+            <img src="img/Estrelinhas.svg" alt="classificação" width="90px">
+            <h3 class="card_texto">Autora do Mês</h3>
+            <h2 class="card_titulo">Juliana Agarikov</h2>
+            <p class="card_descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+            <div class="card_imagens">
+                <img src="img/Favoritos.svg" alt="Favoritos" width="25px">
+                <img src="img/Compras.svg" alt="Sacola" width="35px">
+            </div>
+        </div>
+        <div class="card_botoes">
+            <img src="img/Perfil-escritora 1.svg" alt="Foto da escritora" class="imagem-card_angular">
+            <button class="card_botao_saiba_mais">Saiba mais</button>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos_titulo">Tópicos visitados recentemente</h2>
+        <ul class="topicos_lista">
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Android</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Marketing Digital</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Agile</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Startups</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">HTML & CSS</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Python</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">OO</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Java</a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 20,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+</html>
